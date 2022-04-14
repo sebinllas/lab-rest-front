@@ -31,10 +31,20 @@ function App() {
 
 	return (
 		<div>
-			<div className='mx-auto my-2 p-2 rounded-lg w-fit border-2'>
+			<h1 className="text-center p-4 mx-10 rounded-b-xl 
+				 font-extrabold text-3xl">
+				Agrega Empleados
+			</h1>
+			<div className="mx-auto my-2 p-2 rounded-lg w-fit border-2">
 				<PersonForm onSubmit={addPerson} />
 			</div>
-			
+
+			<hr className='border-[1px] my-5'/>
+			<h1 className="text-center p-4 mx-10 rounded-b-xl 
+				 font-extrabold text-3xl">
+				Lista de Empleados
+			</h1>
+
 			<PersonList list={list} updateList={fetchData} />
 		</div>
 	);
